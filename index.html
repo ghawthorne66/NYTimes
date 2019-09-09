@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New York Times Search</title>
+​
+    <!-- Style Sheets & Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+​
+​
+</head>
+​
+<body>
+​
+    <!-- JUMBOTRON-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                 New York Times Search</h1>
+        </div>
+    </div>
+​
+    <!-- Search Parameters Box-->
+    <div class="card">
+        <h5 class="card-header"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Search Parameters</h5>
+        <div class="card-body">
+​
+            <!-- Search Form-->
+​
+            <form>
+                <div class="form-group">
+                    <label for="search-term">Search Term</label>
+                    <input type="text" class="form-control" id="search-term-field">
+                </div>
+                <div class="form-group">
+                    <label for="number-of-records">Number of Articles to Retrieve</label>
+                    <select class="form-control" id="number-records-field">
+                        <option>1</option>
+                        <option>5</option>
+                        <option>10</option>
+                    </select>
+                    <div class="form-group">
+                        <label for="start-year">Start Year (Optional)</label>
+                        <input type="text" class="form-control" id="start-year-field">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-year">End Year (Optional)</label>
+                        <input type="text" class="form-control" id="end-year-field">
+                    </div>
+                </div>
+​
+                <!-- Buttons-->
+                <button type="button" class="btn btn-primary btn-lg" id="submit-button"> <i class="fa fa-search" aria-hidden="true"></i>
+                     Search</button>
+                <button type="button" class="btn btn-secondary btn-lg" id="clear-button"><i class="fa fa-trash" aria-hidden="true"></i>
+                     Clear Results</button>
+​
+​
+​
+            </form>
+​
+​
+        </div>
+    </div>
+​
+    <br>
+    <br>
+​
+    <!-- Results Box-->
+    <div class="card">
+        <h5 class="card-header"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Top Articles</h5>
+        <div class="card-body" id="results">
+​
+            <!-- List of Returned Articles-->
+            <ul class="list-group" style="list-style-type: none;">
+               <!--  <li class="list-group-item">Cras justo odio</li> -- NOTE: the class needs ot be "list-group-item" for boost strap style -->
+                
+            </ul>
+​
+        </div>
+    </div>
+​
+    <!-- Footer-->
+    <hr>
+    <p id="footer-text">Made with love <i class="fa fa-heart" aria-hidden="true"></i></p>
+​
+​
+    <!-- Javscript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+​
+    <script src="app.js"></script>
+</body>
+​
+</html>
+
+
+
+
+
